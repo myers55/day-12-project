@@ -2,12 +2,17 @@
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // A:
 
-function max(num1, num2){
-    if (num1 > num2){
-    return num1;
-  } else (num2 > num1)
-    return num2;
+function max(num1, num2) {
+
+  var maxNum = num2;
+
+  if (num1 > maxNum) {
+    maxNum = num1;
   }
+
+  return maxNum;
+
+}
 
 
 
@@ -34,8 +39,14 @@ function maxOfThree(nUm1, nUm2, nUm3){
 
 function isVowel(char){
 
+  var letter = false;
 
+  if(char == 'a' || char == 'e' || char == "i" || char == "o" || char == "u")
+    letter = true;
 
+  return letter;
+
+}
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // A:
@@ -66,10 +77,10 @@ function getLength(text){
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // A:
- function greaterThan(base, foot){
-   if (base > foot){
+ function greaterThan (numOne, numTwo){
+   if numOne > numTwo){
      return false;
-   }else if (base < foot){
+   }else if numOne < numTwo){
      return true;
     }
  }
@@ -81,7 +92,7 @@ function getLength(text){
 // is the parameter that was passed in.
 // A:
 function greet(name){
-  return "hello" + "" + name
+  return "Hello," + " " + name + "!";
   }
 
 
