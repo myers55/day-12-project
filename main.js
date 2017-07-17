@@ -78,9 +78,9 @@ function getLength(text){
 // Otherwise the function should return `false`.
 // A:
  function greaterThan (numOne, numTwo){
-   if numOne > numTwo){
+   if (numOne > numTwo){
      return false;
-   }else if numOne < numTwo){
+   }else if (numOne < numTwo){
      return true;
     }
  }
