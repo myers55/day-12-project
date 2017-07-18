@@ -41,7 +41,7 @@ function isVowel(char){
 
   var letter = false;
 
-  if(char == 'a' || char == 'e' || char == "i" || char == "o" || char == "u")
+  if(char == 'a' || char == 'e' || char == "i" || char == "o" || char == "u" || char == "y")
     letter = true;
 
   return letter;
